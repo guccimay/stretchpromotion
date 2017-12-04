@@ -25,7 +25,7 @@
   				if (b.layerX || 0 == b.layerX) a = b.layerX, d = b.layerY;
   				else if (b.offsetX || 0 == b.offsetX) a = b.offsetX, d = b.offsetY;
   				c.lineCap = "full";
-  				c.lineWidth = 4;
+  				c.lineWidth = 10;
   				c.strokeStyle = "white";
   				e ? (c.lineTo(a, d), c.stroke()) : (c.beginPath(), c.moveTo(a, d), e = !0)
   			}, !1)
@@ -53,7 +53,7 @@
 <canvas id="drawingspace" width="100%" height="400%" overflow-y="scroll"
 style="position:fixed; z-index:0;"> </canvas>
 
-<div id="name"> TEST </br>
+<div id="name"></br>
 </div>
 
 </div>
