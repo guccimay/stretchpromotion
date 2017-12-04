@@ -1,20 +1,19 @@
 body
-{font-family: Arial, sans-serif !important;
-color: white;
+{font-family: 'Raleway500', sans-serif !important;
 background-color: black;
 text-align: center;
 }
-
-p {
-  font-family: Arial, sans-serif;
-  color: white;
-  font-size: 1.5em;
-  text-align: center;
-  margin-bottom: 40px;
-  }
 
 #stretch {
   margin-left: 30%;
   margin-top: 8%;
   font-size: 20px;
 }
+
+p {
+  font-family: arial, sans-serif;
+  color: white;
+  font-size: 1.5em;
+  text-align: center;
+  margin-bottom: 40px;
+  }
