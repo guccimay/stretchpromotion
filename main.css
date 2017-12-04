@@ -4,19 +4,6 @@ color: black;
 background-color: white;
 }
 
-a
-{
-text-decoration: none !important;
-font-family: 'Raleway500', sans-serif;
-color: black;
-}
-
-section{
-  margin-left: 80px;
-  margin-top: 10%;
-  font-size: 14px;
-  width: 500px;
-}
 
 @keyframes spin {
 	from { transform: rotate(0deg); }
@@ -85,8 +72,9 @@ display:inline-block;}
 #libros{
   margin-bottom:10px;
 }
-#name{
-  margin-left: 8%;
+
+#stretch {
+  margin-left: 30%;
   margin-top: 6%;
   font-size: 20px;
 }
