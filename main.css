@@ -1,13 +1,7 @@
 body
-{font-family: 'Raleway500', sans-serif !important;
+{font-family: Arial, sans-serif !important;
 background-color: black;
 text-align: center;
-}
-
-#stretch {
-  margin-left: 30%;
-  margin-top: 8%;
-  font-size: 20px;
 }
 
 p {
@@ -17,3 +11,9 @@ p {
   text-align: center;
   margin-bottom: 40px;
   }
+
+#stretch {
+  margin-left: 30%;
+  margin-top: 8%;
+  font-size: 20px;
+}
