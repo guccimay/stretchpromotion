@@ -29,83 +29,66 @@ h2 {
     letter-spacing: 3px;
   }
 
-  h3 {
+h3 {
+        font-family:"Arial Narrow", arial;
+        font-weight: bold;
+        color:white;
+        font-size: 4em;
+        text-align: center;
+        letter-spacing: 3px;
+    }
+
+#topnav a {
+        list-style: none;
+        text-decoration: none;
         font-family:"Arial Narrow", arial;
         font-weight: bold;
         color:white;
         font-size:4em;
-        text-align: center;
-    letter-spacing: 3px;
-    }
-
+        text-align: left;
+        -webkit-text-stroke-width: .5px;
+        -webkit-text-stroke-color: black;
+        letter-spacing: 3px;
+}
     a{
       list-style: none;
       text-decoration: none;
       font-family:"Arial Narrow", arial;
       font-weight: bold;
       color:white;
-      font-size:1em;
       text-align: left;
       letter-spacing: 3px;
     }
 
-  #posters ul li
+#topnav
+  { margin-left: 5%;
+    margin-top: 1%;
+    text-align:center;
+    display: inline-block;
+    word-spacing: 5px;
+  }
+
+#posters ul li
   {list-style-type:none;
     display:inline;
     padding:0;
   }
-  
-    #home {
-     margin-left: 60%;
-    margin-top: -3%;
-    }
 
-    #info
-  { width: 750px;
-    padding: 20px;
-    top: 50%;
-    margin-left: 21%;
-    letter-spacing: 3px;
-  }
-  
-  marquee {
+marquee {
   font-family: sans-serif;
   font-size: 14px;
   width: 100%;
   letter-spacing: 1px;}
 
-  p {
-    text-align: center;
-    font-size: 4em;
-    color: white;
-    font-family: "Arial Narrow", Arial, sans-serif;
-    font-weight: bold;
-    position: fixed;
-    margin: auto;
-    top: 5%;
-    left: 15%;
-  }
-    @media all and (max-width: 1000px) and (min-width: 700px) {
-    p{
-      margin-left: 3%;
-      margin-top: 3%;
-      font-size: 3em;
-      letter-spacing: 3px;
-    }
-  }
 
-    @media all and (max-width: 1000px) and (min-width: 700px){
+  @media all and (max-width: 1000px) and (min-width: 700px){
       #posters {
      margin: auto;
       }
     }
 
-
     @media all and (max-width: 1000px) and (min-width: 700px){
-      #info {
-        margin-left: 8%;
-        width: 600px;
-      }
+
     h3 {
       font-size: 3em;
       letter-spacing: 3px;
@@ -143,43 +126,11 @@ h2 {
 </head>
 <body>
 
-  <p id="demo"></p>
-  <div id="home">
-    <h3><a href="index.html"> home </a></h3>
-  </div>
-
-
-  <script>
-  // Set the date we're counting down to
-  var countDownDate = new Date("Dec 9, 2017 14:00:00").getTime();
-
-  // Update the count down every 1 second
-  var x = setInterval(function() {
-
-      // Get todays date and time
-      var now = new Date().getTime();
-
-      // Find the distance between now an the count down date
-      var distance = countDownDate - now;
-
-      // Time calculations for days, hours, minutes and seconds
-      var days = Math.floor(distance / (1000 * 60 * 60 * 24));
-      var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
-      var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
-      var seconds = Math.floor((distance % (1000 * 60)) / 1000);
-
-      // Output the result in an element with id="demo"
-      document.getElementById("demo").innerHTML = days + "d " + hours + "h "
-      + minutes + "m " + seconds + "s ";
-
-      // If the count down is over, write some text
-      if (distance < 0) {
-          clearInterval(x);
-          document.getElementById("demo").innerHTML = "IN STORES NOW";
-      }
-  }, 1000);
-  </script>
-
+    <div id="topnav">
+      <a href="index.html" style="padding-right:50px;">In Stores Now</a>
+      <a href="music.html" style="padding-right:50px;">Music</a>
+      <a href="info.html">Info</a>
+    </div>
 
 
     <div id="info">
@@ -200,12 +151,14 @@ moonsick gang</br></br>
     <a href="http://naver.me/FGrq2MMu">stussy</a></br>
     <a href="http://naver.me/GWmHu54Y">savour skateshop</a></br></br>
 
-    
+
 for more than 3 pcs purchase,</br>
 + stretch package</br>
 (only 500pcs)</br></br>
 
-    <marquee behavior="scroll" direction="left">*warped는 12/11 월요일 오후 두시부터 판매 시작합니다. rm.360은 12/10 일요일 오후 두시부터 판매 시작합니다. </marquee>
+    <marquee behavior="scroll" direction="left">
+  *warped는 12/11 월요일 오후 두시부터 판매 시작합니다. rm.360은 12/10 일요일 오후 두시부터 판매 시작합니다.
+*the purchase can be available on 12/11 Monday from 2pm at warped, and on 12/10 from 2pm at rm.360. </marquee>
 
     </h3>
     </div>
