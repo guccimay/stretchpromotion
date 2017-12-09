@@ -6,7 +6,7 @@
 <style>
 html
 {overflow-x: hidden;}
-  
+
 body
   {background-image: url("stretchweb.jpg");
   background-repeat: no-repeat;
@@ -17,166 +17,76 @@ body
   background-color: black;
   text-align: center;
   margin:0 auto;
-  -webkit-text-stroke-width: .5px;
--webkit-text-stroke-color: black;
   }
 
-  iframe {
-    text-align: center;
-    position: absolute;
-    margin: auto;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-  }
-h2 {
-    font-family:"Arial Narrow", arial;
-      font-weight: bold;
-    color:white;
-    font-size:4em;
-    text-align: center;
-    -webkit-text-stroke-width: .5px;
--webkit-text-stroke-color: black;
-letter-spacing: 3px;
-  }
-
-  h3 {
-      font-family:"Arial Narrow", arial;
-        font-weight: bold;
-      color:white;
-      font-size:4em;
-        text-align: left;
-        -webkit-text-stroke-width: .5px;
--webkit-text-stroke-color: black;
-letter-spacing: 3px;
-    }
-
-    a{
-      list-style: none;
-    text-decoration: none;
-    font-family:"Arial Narrow", arial;
-      font-weight: bold;
-    color:white;
-    font-size:1em;
-      text-align: left;
-      -webkit-text-stroke-width: .5px;
-    -webkit-text-stroke-color: black;
-    letter-spacing: 3px;
-    }
-
-    #info
-  { width: 400px;
-    padding: 20px;
-    margin-left: 75%;
-    margin-top: -4%;
-  }
-  p {
-    text-align: center;
-    font-size: 4em;
-    color: white;
-    font-family: "Arial Narrow", Arial, sans-serif;
-    font-weight: bold;
-    position: fixed;
-    margin: auto;
-    top: 5%;
-    left: 15%;
-    -webkit-text-stroke-width: .5px;
-  -webkit-text-stroke-color: black;
-  letter-spacing: 3px;
-  }
-    @media all and (max-width: 1000px) and (min-width: 700px) {
-    p{
-     margin: auto;
-     font-size: 3em;
-     letter-spacing: 3px;
-    }
-    h3
-    {
-      font-size:3em;
-      letter-spacing: 3px;
-    }
-  }
-
-    @media all and (max-width: 1000px) and (min-width: 700px){
-      #posters {
-        margin-left: 2%;
-        margin-top: 80%;
-      }
-    }
-
-
-    @media all and (max-width: 1000px) and (min-width: 700px){
-      #info {
-        margin-left: 70%;
-        margin-top: 3%;
-      }
-    }
-
-  @media all and (max-width: 1000px) and (min-width: 700px) {
-iframe {
+#video {
+  margin: auto;
+  top: 55%;
+  left: 50%;
+  transform: translate(-50%, -50%);
   text-align: center;
   position: absolute;
-  margin: auto;
-  top: 35%;
-  left: 50%;
-  }
 }
-  @media all and (max-width: 1000px) and (min-width: 700px) {
-  body
-{
-  background-image: url("stretchweb.jpg");
-  background-repeat: no-repeat;
-  background-attachment: fixed;
-  font-family: "Arial Narrow", Arial, sans-serif !important;
-  background-color: black;
-text-align: center;
-margin:0 auto;
-}
+
+a {
+      list-style: none;
+      text-decoration: none;
+      font-family:"Arial Narrow", arial;
+      font-weight: bold;
+      color:white;
+      font-size:4em;
+      text-align: left;
+      -webkit-text-stroke-width: .5px;
+      -webkit-text-stroke-color: black;
+      letter-spacing: 3px;
+    }
+
+#topnav
+  { margin-left: 5%;
+    margin-top: 1%;
+    text-align:center;
+    display: inline-block;
+    word-spacing: 5px;
   }
+
+@media all and (max-width: 1000px) and (min-width: 700px){
+      #video {
+        margin: auto;
+        top: 35%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        text-align: center;
+        position: absolute;
+      }
+    }
+
+    @media all and (max-width: 1000px) and (min-width: 700px){
+      body {
+        background-image: url("stretchweb.jpg");
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+        font-family: "Arial Narrow", Arial, sans-serif !important;
+        background-color: black;
+          text-align: center;
+            margin:0 auto;}
+        }
 </style>
 <link rel="stylesheet" href="main.css">
 </head>
 <body>
 
-  <p id="demo"></p>
-
-  <script>
-  // Set the date we're counting down to
-  var countDownDate = new Date("Dec 9, 2017 14:00:00").getTime();
-
-  // Update the count down every 1 second
-  var x = setInterval(function() {
-
-      // Get todays date and time
-      var now = new Date().getTime();
-
-      // Find the distance between now an the count down date
-      var distance = countDownDate - now;
-
-      // Time calculations for days, hours, minutes and seconds
-      var days = Math.floor(distance / (1000 * 60 * 60 * 24));
-      var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
-      var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
-      var seconds = Math.floor((distance % (1000 * 60)) / 1000);
-
-      // Output the result in an element with id="demo"
-      document.getElementById("demo").innerHTML = days + "d " + hours + "h "
-      + minutes + "m " + seconds + "s ";
-
-      // If the count down is over, write some text
-      if (distance < 0) {
-          clearInterval(x);
-          document.getElementById("demo").innerHTML = "IN STORES NOW";
-      }
-  }, 1000);
-  </script>
-
-  <iframe src="https://player.vimeo.com/video/246222961?autoplay=1&loop=1&title=0&byline=0&portrait=0" 
-          width="500" height="375" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
-  
-  <div id="info">
-    <h3><a href="info.html">info</a></h3>
+  <div id="topnav">
+    <a href="index.html" style="padding-right:50px;">In Stores Now</a>
+    <a href="music.html" style="padding-right:50px;">Music</a>
+    <a href="info.html">Info</a>
   </div>
+
+
+<div id="video">
+  <iframe src="https://player.vimeo.com/video/246222961?autoplay=1&loop=1&title=0&byline=0&portrait=0"
+   width="500" height="375"frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+</div>
+
 
 </body>
 </html>
